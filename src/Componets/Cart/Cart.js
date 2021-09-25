@@ -5,11 +5,9 @@ import AddedCartName from "./AddedCartName";
 
 const Cart = (props) => {
   const userIcon = <FontAwesomeIcon icon={faUser} />;
-  let name = "";
   let totlaDonated = 0;
   for (const men of props.data) {
     totlaDonated = men.sallary + totlaDonated;
-    name = men.name;
   }
   return (
     <div>
