@@ -4,7 +4,7 @@ const AddedCartName = (props) => {
   const { name, photo } = props.men;
   return (
     <div className="shadow-lg my-3 d-flex align-items-center justify-content-around">
-      <img height="50" className="w-25 rounded-circle" src={photo} alt="" />
+      <img height="45" className="w-25 rounded-circle" src={photo} alt="" />
       <p> {name}</p>
     </div>
   );
