@@ -6,8 +6,12 @@ import AddedCartName from "./AddedCartName";
 const Cart = (props) => {
   const userIcon = <FontAwesomeIcon icon={faUser} />;
   let totlaDonated = 0;
+  let users = [];
   for (const men of props.data) {
-    totlaDonated = men.sallary + totlaDonated;
+    if (users.indexOf(men) === -1) {
+      users.push(men);
+      totlaDonated = men.sallary + totlaDonated;
+    }
   }
   return (
     <div>
@@ -16,14 +20,14 @@ const Cart = (props) => {
           {userIcon}
           Total Men Added :
         </span>
-        <span> {props.data.length}</span>
+        <span> {users.length}</span>
       </h4>
       <h5>
         <span className="text-danger">Total Donated : $</span>
         <span>{totlaDonated}</span>
       </h5>
       <div>
-        {props.data.map((men) => (
+        {users.map((men) => (
           <AddedCartName key={men.id} men={men}></AddedCartName>
         ))}
       </div>

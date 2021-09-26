@@ -6,7 +6,7 @@ this is single page application.[live websilte](https://assigment-8.netlify.app/
 
 - total dontaion calculation
 - you can change data
-- friendly
+- Mobile friendly
 
 # technology
 
