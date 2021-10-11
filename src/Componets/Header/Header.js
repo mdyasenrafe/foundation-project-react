@@ -11,7 +11,7 @@ const Header = () => {
         suffering from poverty will establish themselves as prosperous
         communities.
       </p>
-      <h4>Total Cost : 1 Million</h4>
+      <h4>Total Cost : 10 Million</h4>
     </div>
   );
 };
